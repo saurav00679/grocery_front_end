@@ -1,0 +1,87 @@
+html {
+  font-family: "Montserrat", sans-serif;
+}
+body{
+    padding: 0 16px;
+    background: #eee;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  background-color: #93b922;
+  margin: auto -16px;
+  padding: 16px 32px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+.items{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+}
+
+.item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.item button{
+  margin: 10px;
+}
+
+.item > img{
+  margin-top: 30px;
+  border-radius: 20%;
+}
+.item > img:hover{
+  transform: scale(1.2);
+}
+.table{
+  width: 60%;
+  margin-left: 20%;
+}
+
+.details{
+  text-align: center;
+  margin-top: 20px;
+}
+
+.details h2{
+  color: green;
+}
+
+.main{
+  text-align: center;;
+}
+
+.price-table{
+  margin-top: 10%;
+}
+
+.main > a{
+  margin-left: 90%;
+}
+
+.main button{
+  margin-top: 25px;
+}
+
+.reset-btn{
+  margin-left: 20px;
+}
+
+.itemName{
+  font-family: "McLaren", cursive;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+.grocery-btn{
+  margin-top: 20px;
+  margin-left: 85%;
+}
+
+.condition{
+  text-align: center;
+  color: rgb(220, 101, 101);
+}

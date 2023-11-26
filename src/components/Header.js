@@ -1,9 +1,9 @@
 import React from "react";
 
-const Header = ()=>{
+const Header = (props)=>{
   return(
   <header>
-      <h1>Buy Grocery</h1>
+      <h1>{props.title ? props.title : "Buy Grocery"}</h1>
   </header>
   );
 }

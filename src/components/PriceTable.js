@@ -7,7 +7,7 @@ const PriceTable = ()=>{
     useEffect(() => {
       const fetchData = async () => {
         try {
-          const response = await axios.get('http://127.0.0.1:3001/price');
+          const response = await axios.get('http://127.0.0.1:3000/price');
           setDetails(response.data.prices);
         } catch (err) {
           alert(err);
@@ -19,7 +19,7 @@ const PriceTable = ()=>{
     
     return (
       <div>
-        <Header/>
+        <Header title={"Price Table"}/>
         <a href="/"><button className="btn btn-info grocery-btn">Back to Grocery</button></a>
 
         <table className="table price-table">
